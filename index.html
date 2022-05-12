@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  
+    
+    }
+
+.bg {
+  /* The image used */
+  background-image: url("SauliWebPage.png");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  
+}
+
+/* If you want the content centered horizontally and vertically */
+.otsikko {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+    
+.tiedot{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg">
+    <div class="split left">
+  <div class="otsikko">
+    <h2>Sauli Tvaltvadze</h2>
+    <p>contact: </p>
+    <p>sale.tvaltvadze@gmail.com</p>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="tiedot">
+    <h2>Current and Upcoming</h2>
+    <p>Kohdennus / Targeting, short film</p>
+    <p>Kuvan Kevät 7.5. - 5.6.2022</p>
+    <p>Scheduled Screenings during exhibition's opening hours</p>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

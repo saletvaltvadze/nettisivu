@@ -4,10 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body, html {
+  font-family: Georgia, serif;
   height: 100%;
   margin: 0;
-  
-    
+  color: #526c7ad3;
+  text-shadow: 2px 1px #ffffff48;
+ 
     }
 
 .bg {
@@ -30,7 +32,7 @@ body, html {
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding-top: 20px;
+  
 }
 
 /* Control the left side */
@@ -48,9 +50,10 @@ body, html {
 .otsikko {
   position: absolute;
   top: 15%;
-  left: 30%;
+  left: 45%;
   transform: translate(-50%, -50%);
   text-align: left;
+  margin-left: 5%;
 }
     
 .tiedot{
@@ -61,6 +64,11 @@ body, html {
   text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+.bg {
+  background-position: 35%;
+}
+}
 </style>
 </head>
 <body>
@@ -76,10 +84,9 @@ body, html {
 
 <div class="split right">
   <div class="tiedot">
-    <h2>Current / Upcoming</h2>
+    <h2>Current</h2>
     <p>Kohdennus / Targeting, short film</p>
     <p>Kuvan Kevät 7.5. - 5.6.2022</p>
-    <p>Scheduled Screenings during exhibition's opening hours</p>
   </div>
 </div>
 </div>

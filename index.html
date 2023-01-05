@@ -8,22 +8,8 @@ body, html {
   height: 100%;
   margin: 0;
   color: #1d303bd3;
-  text-shadow: 1px 0.2px #f8f8f8a1;
- 
-    }
-
-
-
-.bg {
-
-  background-image: url("SauliWebPage.png");
-  
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-    
+
 .split {
   height: 100%;
   width: 50%;
@@ -43,62 +29,95 @@ body, html {
   
 }
 
+.galleria { 
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  right: 0%;
+
+}
+
+.column {
+  margin-bottom: 10px;
+  float: center;
+}
 
 .otsikko {
-  position: absolute;
-  top: 15%;
-  left: 45%;
-  transform: translate(-50%, -50%);
   text-align: left;
-  margin-left: 5%;
+  position: absolute;
+  top: 14%;
+  left: 15%;
+  transform: translate(0%, -50%);
+  font-size: 14px;
 }
-    
+ 
 .tiedot{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: right;
+  top: 60%;
+  left: 15%;
+  transform: translate(0%, -50%);
+  text-align: left;
+  font-size: 12px;
 }
+
+.mainphoto{
+  margin-bottom: 10px;
+  float: center;
+}
+
+
 
 @media screen and (max-width: 800px) {
-.bg, .split, .otsikko{
-  text-align: center;
-  background-position: 35%;
-  width: 100%;
+
 }
 
-.tiedot{
-  text-align: center;
-  background-position: 35%;
-  width: 100%;
-  top: 70%;
-}
-}
 </style>
 </head>
 <body>
 
-<div class="bg">
-    <div class="split left">
+
+<div class="split left">
   <div class="otsikko">
-    <h2>Sauli Tvaltvadze</h2>
-    <p>contact: </p>
+    <h1>Sauli Tvaltvadze</h1>
+    <div class="otsikontiedot">
     <p>sale.tvaltvadze@gmail.com</p>
+    </div>
   </div>
-</div>
 
 <div class="split right">
-  <div class="tiedot">
-    <h2>Coming Up</h2>
-    <p>24-27.11.2022 Urban Visions. Beyond the Ideal City, Bologna Italy</p>
-    <p>28.11-4.12.2022 31.Euroshorts International Film Festival, Gdańsk Poland</p>
-    <h2>Past</h2>
-    <p>17.9.2022 Uniarts Fest, Helsinki Finland</p>
-    <p>27.8.2022 (de)Constructing, Helsinki Finland</p>
-    <p>7.5.-5.6.2022 the Academy of the Fine Arts MFA Degree Show, Helsinki Finland</p>
+  <div class="galleria">
+    <div class="mainphoto">
+      <img src="maijansali.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="TargetingPosterFF.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="filmi.jpeg" style="width:100%">
+    </div>
   </div>
 </div>
+</div>
+
+  <div class="split left">
+
+  <div class="tiedot">
+
+    <h2>Coming Up</h2>
+
+    <p>20.1.-29.1.2023 Where do we learn?, Kuva/Tila, Helsinki Finland</p>
+
+    <h2>Past</h2>
+
+    <p>24-27.11.2022 Urban Visions. Beyond the Ideal City, Bologna Italy</p>
+    <p>28.11-4.12.2022 31.Euroshorts International Film Festival, Gdańsk Poland</p>
+    <p>27.8.2022 (de)Constructing, Konalanvuoren ostoskeskus, Helsinki Finland</p>
+    <p>3.4.2022 SOLIDARITY, Oodi Public Libary, Helsinki Finland</p>
+  </div>
+</div>
+</div>
+
+
 </div>
 
 </body>

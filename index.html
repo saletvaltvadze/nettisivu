@@ -5,36 +5,22 @@
 <style>
 body, html {
   font-family: Georgia, serif;
-  height: 100%;
-  margin: 0;
   color: #1d303bd3;
 }
 
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  
-}
 
 .left {
-  left: 0;
+  height: 100%;
+  width: 50%;
+
 }
 
 .right {
-  right: 0;
-  
-}
-
-.galleria { 
-  position: absolute;
-  left: 0%;
-  right: 0%;
+  width:100%;
+  margin-left: 100%;
 
 }
+
 
 .column {
   margin-bottom: 10px;
@@ -43,18 +29,15 @@ body, html {
 
 .otsikko {
   text-align: left;
-  position: absolute;
-  top: 14%;
-  left: 15%;
-  transform: translate(0%, -50%);
+  position: fixed;
+  left: 5%;
   font-size: 14px;
 }
  
 .tiedot{
-  position: absolute;
-  top: 60%;
-  left: 15%;
-  transform: translate(0%, -50%);
+  position: fixed;
+  top: 30%;
+  left: 5%;
   text-align: left;
   font-size: 12px;
 }
@@ -79,19 +62,22 @@ body, html {
 </style>
 </head>
 
+
+
+
+
 <body>
-
-
-<div class="split left">
+<div class="left">
   <div class="otsikko">
     <h1>Sauli Tvaltvadze</h1>
     <div class="otsikontiedot">
     <p>sale.tvaltvadze@gmail.com</p>
-    <p><a href="/roadstell" target="_blank">roadstell</a></p>
+    <p><a href="/roadstell.html" target="_blank">Roads Tell</a></p>
     </div>
-  </div>
+    </div>
 
-<div class="split right">
+
+<div class="right">
   <div class="galleria">
     <div class="mainphoto">
       <img src="maijansali.jpg" style="width:100%">
@@ -106,7 +92,7 @@ body, html {
 </div>
 </div>
 
-  <div class="split left">
+  <div class="left">
 
   <div class="tiedot">
 

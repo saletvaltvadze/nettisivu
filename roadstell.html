@@ -1,11 +1,125 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    </style>
-    </head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="RoadsTellWeb/main.css">
+      
 
-    <body>
-        <p>moi</p>
-    </body>
+<style>
+  @media (min-width: 200px) and (max-width: 999px) {
+
+  .allImages{
+    display: none;
+    margin-bottom: 2%;
+  }
+}
+@media (min-width: 1000px){
+  .allImages{
+    display: none;
+    margin-bottom: 3%;
+  }
+}
+
+</style>
+
+<title>Roads Tell</title>
+
+
+</head>
+
+<body>
+    <div class="loader hidden">
+        <img src="RoadsTellWeb/loadingscreen.png" class="rotate" width="250" height="300">
+        </div>
+        
+    <img class="logo" src="RoadsTellWeb/Logo.png">
+
+    
+
+<div class="normalText">
+  <div id="alkujorinat">
+    <p>Welcome to Roads Tell</p>
+    <p> Below you will see an image of roads of some capital city locating anywhere around the world.
+The country is either rich or poor: It belongs either to the Top 30 or the Lowest 30 by their ranking of GDP-per-capita.
+Can you guess which category it belongs?</p>
+
+
+
+</div>
+<div class="flex-parent jc-center">
+  <button class="buttons" id="oikein" onclick="PainettiinTop()" style="display: inline;">Top 30</button>
+  <button class="buttons" id="vaarin" onclick="PainettiinLowest()" style="display: inline;">Lowest 30</button>
+  </div>
+  <isolla><span id="kommentti"></span></isolla>
+  <p><span id="Result"></span></p> 
+
+     <button class="buttons" id="uusi" onclick="Uudestaan()" style="display: none;">Next</button>
+  </div>
+   
+
+  </div>
+  
+     </div style="display: block;">
+    <img class="allImages" id="0" src="RoadsTellWeb/Ma.svg">
+    <img class="allImages" id="1" src="RoadsTellWeb/W.png">
+    <img class="allImages" id="2" src="RoadsTellWeb/Do.png">
+    <img class="allImages" id="3" src="RoadsTellWeb/Lu.svg">
+    <img class="allImages" id="4" src="RoadsTellWeb/Am.png">
+    <img class="allImages" id="5" src="RoadsTellWeb/H.png">
+    <img class="allImages" id="6" src="RoadsTellWeb/Ot.png">
+    <img class="allImages" id="7" src="RoadsTellWeb/Ber.svg">
+    <img class="allImages" id="8" src="RoadsTellWeb/Bru.png">
+    <img class="allImages" id="9" src="RoadsTellWeb/Can.png">
+    
+    <img class="allImages" id="10" src="RoadsTellWeb/Lo.png">
+    <img class="allImages" id="11" src="RoadsTellWeb/Ni.svg">
+    <img class="allImages" id="12" src="RoadsTellWeb/Kig.svg">
+    <img class="allImages" id="13" src="RoadsTellWeb/Ban.svg">
+    <img class="allImages" id="14" src="RoadsTellWeb/Bis.png">
+    <img class="allImages" id="15" src="RoadsTellWeb/Kin.png">
+    <img class="allImages" id="16" src="RoadsTellWeb/Dh.svg">
+    <img class="allImages" id="17" src="RoadsTellWeb/Ou.png">
+    <img class="allImages" id="18" src="RoadsTellWeb/Po.svg">
+    <img class="allImages" id="19" src="RoadsTellWeb/Bam.svg">
+  
+    
+    
+    <button class="buttons" id="playagain" onclick="document.location='/'" style="display: none;">Play Again</button>
+  
+    <button class="buttons" id="gallery" onclick="document.location='/gallery'" style="display: none;">Gallery</button>
+  
+    <button class="buttons" id="guestbook" onclick="document.location='/feedback'" style="display: none;">Guest Book</button>
+  </div>
+  
+      
+  <div class="normalText">
+    <p><span id="questionNumber">Question: 1/20</span></p> 
+    <p><span id="points">Points: 0</span></p>  
+  </div>
+
+
+    <div class="credits">
+        <img class="line" src="RoadsTellWeb/Line_1.png">
+          <p>www.openstreetmap.org </p>
+          <p>www.worldometers.info/gdp/gdp-per-capita </p>
+          <br>
+          <p>Sauli Tvaltvadze</p>
+          <p>2023</p>
+          
+        </div>
+
+
+<script>
+    window.addEventListener("load", function(){
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden";
+      });
+  </script>
+
+
+  <script src="RoadsTellWeb/game.js"></script>
+  
+
+
+</body></html>

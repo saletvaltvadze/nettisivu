@@ -140,7 +140,7 @@ if (searchNewNumber == true){
   newgame = true;
   points.innerHTML = "Thank you for playing Roads Tell. Your score was " + String(pointCount) + " out of " + String(imageAmount) + " points.";
   uusi.style.display = "none";
-  playagain.style.display = window.location.replace("roadstell");
+  playagain.style.display = "New Game";
   alkujorinat.innerHTML = "";
   alkujorinat.innerHTML = "";
   kommentti.innerHTML = "";
@@ -150,3 +150,4 @@ if (searchNewNumber == true){
   
 
   }
+

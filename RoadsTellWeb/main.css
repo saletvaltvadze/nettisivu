@@ -187,7 +187,6 @@
     margin-left:auto;
     margin-right:auto;
     margin-top: 1%;
-    margin-bottom: 1.5%;
     width: 50%;
     height: auto;
   
@@ -247,23 +246,22 @@
   }
   
   figcaption {
-    margin-bottom: 5%;
+
 
   }
 
   .buttons{
   
     background-color: #ffffff;
-    margin: 0 5%;
-    width: 12%;
-    padding-right: 5%;
+    margin: 0% 5%;
+    padding: 1%;
     border: 2px solid #000000;
     color: black;
     font-size: 1.5vw;
     border-radius: 4px;
     cursor: pointer;
     transition-duration: 0.4s;
-    margin-bottom: 2%;
+    
   }
   
   .buttons:hover{

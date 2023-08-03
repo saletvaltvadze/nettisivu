@@ -23,17 +23,13 @@ body, html {
 }
 
 
-.bigimage {
-  margin-bottom: 10px;
-}
-
 .img {
   max-width: 100%;
 }
 
 .tekstiosuus{
-    margin-top: 7%;
-    margin-left: 10%;
+    margin-top: 5%;
+    margin-left: 5%;
     margin-bottom: 30px;
 }
 .otsikko {
@@ -47,6 +43,40 @@ body, html {
 .tiedot{
   margin-top: 10%;
 }
+
+.container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #494949;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+
+.yliteksti{
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
 
 @media screen and (max-width: 800px) {
 
@@ -70,9 +100,6 @@ body, html {
 </head>
 
 
-
-
-
 <body>
 <div class="left">
     <div class="tekstiosuus">
@@ -80,42 +107,42 @@ body, html {
     <h1>Sauli Tvaltvadze</h1>
     </div>
     <div class="otsikontiedot">
-      <p>media artist based in Savio, Kerava </p>
     <p>sauli.tvaltvadze@gmail.com</p>
     <p><a href="/roadstell.html" target="_blank">Roads Tell</a></p>
   <div class="tiedot">
 
-    <h2>Coming Up</h2>
+    <p>28.7.2023 Aletheia Fest, Totuus Film Fest, Raasepori</p>
     <p>24.3. - 8.4.2023 Anttila elää!, Kerava</p>
     <p>17.3. - 27.3.2023 Hourglass, Vapaan Taiteen Tila, Helsinki</p>
     <p>17.2. - 31.8.2023 MIX, Savio Temporary, Kerava</p>
-
-
-    <h2>Past</h2>
-
     <p>20.1.- 29.1.2023 Time and space exhibition, Kuva/Tila, Helsinki</p>
     <p>28.11 - 4.12.2022 31.Euroshorts International Film Festival, Gdańsk</p>
     <p>27.8.2022 (de)Constructing, Konalanvuoren ostoskeskus, Helsinki</p>
   </div>
   </div>
-  </div>
-  <div class="bigimage">
-    <img src="MIX2.png" width=100%>
+
 </div>
 </div>
 </div>
 
 
 <div class="right">
-      <div class="bigimage">
-      <img src="Media2.png" width=100%>
-      <img src="_S2A2454.png" width=100%>
-    </div>
-</div>
+        <div class="container">
 
-
-
-
+            <img src="Media2.png" width=100%>
+               <div class="overlay">
+                
+                <div class= "yliteksti">
+                <p>MEDIA</p>
+                <p>Kuva/Tila, Helsinki</p>
+                <p>2023</p>
+                </div>
+            
+               </div>
+              </div>
+        </div>
+      </div>
+  </div>
 
 </div>
 
